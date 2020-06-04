@@ -12,7 +12,7 @@ public class Conexion {
                 String password = "";
                 String Host = "localhost";
                 String Port = "3306";
-                String Database = "ATGlimitada";
+                String Database = "GenMed";
                 String CLASSNAME = "com.mysql.jdbc.Driver";
                 String URL = "jdbc:mysql://" + Host + ":" + Port + "/" + Database;
 
@@ -29,7 +29,7 @@ public class Conexion {
             }
 
             try {
-                CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/tienda", "root", "");
+                CONEXION = DriverManager.getConnection("jdbc:mysql://localhost:3306/GenMed", "root", "");
                 // aqui se contecta
             } catch (SQLException e) {
                 throw new SQLException(e);
